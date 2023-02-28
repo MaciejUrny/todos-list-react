@@ -20,11 +20,11 @@
 }
 
 .buttons__button:hover {
-    transform: scale(1.1);
+    color: hsl(180, 100%, 30%)
 }
 
 .buttons__button:active {
-    color: hsl(180, 100%, 30%);
+    color: hsl(180, 100%, 35%);
 }
 
 *:disabled {
