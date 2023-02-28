@@ -1,10 +1,10 @@
-# ![To do list](%PUBLIC_URL%/icon.png) Task List
+# ![To do list](public/icon.png) Task List
 
 ## Demo
 
-[Task list demo](https://maciejurny.github.io/to_do_list/)
+[Task list demo](https://maciejurny.github.io/todos-list-react/)
 
-![To do list](img/md-animation.gif)
+![To do list](src/md-animation.gif)
 
 ## Description
 
