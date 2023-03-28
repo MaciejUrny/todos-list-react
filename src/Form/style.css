@@ -1,20 +1,15 @@
 .form {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr auto;
+    grid-gap: 20px;
+    padding: 20px;
     margin: 0;
     background-color: hsl(0, 0%, 100%);
     border-bottom: 2px solid hsl(0, 0%, 87%);
 }
 
-.form__container {
-    display: grid;
-    grid-template-columns: 1fr auto;
-    grid-gap: 20px;
-    padding: 20px;
-}
-
 @media (max-width: 767px) {
-    .form__container {
+    .form {
         grid-template-columns: 1fr;
     }
 }
