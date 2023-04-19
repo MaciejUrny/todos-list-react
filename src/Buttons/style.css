@@ -10,7 +10,6 @@
 }
 
 .buttons__button {
-    font-weight: bold;
     color: hsl(180, 100%, 25%);
     background-color: transparent;
     border: none;
@@ -27,6 +26,6 @@
     color: hsl(180, 100%, 35%);
 }
 
-*:disabled {
+.buttons__button:disabled {
     color: #ccc;
 }
