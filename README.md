@@ -4,7 +4,7 @@
 
 [Task list demo](https://maciejurny.github.io/todos-list-react/)
 
-![To do list](src/md-animation.gif)
+![To do list](md-animation.gif)
 
 ## Description
 
