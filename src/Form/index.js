@@ -1,7 +1,6 @@
 import React from "react";
 import { useState } from "react";
 import { Button, FormComponent, Input } from "./styled"
-import "./style.css";
 
 const Form = ({ addNewTask }) => {
     const [newTaskContent, setNewTaskContent] = useState("");
