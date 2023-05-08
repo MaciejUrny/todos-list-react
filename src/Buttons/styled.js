@@ -1,31 +1,31 @@
-.buttons {
+import styled from "styled-components";
+
+export const Container = styled.div`
     display: flex;
     flex-wrap: wrap;
-}
 
-@media (max-width: 767px) {
-    .buttons__button {
+    @media (max-width: 767px) {
         flex-basis: 100%;
     }
-}
+`;
 
-.buttons__button {
+export const Button = styled.button`
     color: hsl(180, 100%, 25%);
     background-color: transparent;
     border: none;
     padding: 10px;
     cursor: pointer;
     transition: 0.3s linear;
-}
 
-.buttons__button:hover {
-    color: hsl(180, 100%, 30%)
-}
+    &:hover {
+    color: hsl(180, 100%, 30%);
+    }
 
-.buttons__button:active {
+    &:active {
     color: hsl(180, 100%, 35%);
-}
+    }
 
-.buttons__button:disabled {
+    &:disabled {
     color: #ccc;
-}
+    }
+`;
