@@ -1,22 +1,22 @@
 import styled from "styled-components";
 
 export const SectionComponent = styled.section`
-    background-color: hsl(0, 0%, 100%);
-    border-bottom: 2px solid hsl(0, 0%, 87%);
+    background-color: ${({ theme }) => theme.color.white};
+    border-bottom: 2px solid ${({ theme }) => theme.color.alto};
     padding: 0px;
     margin: 0px;
     margin-top: 10px;
 `;
 
 export const Header = styled.header`
-    border-bottom: 2px solid hsl(0, 0%, 87%);
+    border-bottom: 2px solid ${({ theme }) => theme.color.alto};
     display: grid;
     grid-template-columns: auto auto;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
 
-    @media (max-width: 767px) {
+    @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
         grid-template-columns: 1fr;
     }
 `;

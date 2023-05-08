@@ -4,13 +4,13 @@ export const Container = styled.div`
     display: flex;
     flex-wrap: wrap;
 
-    @media (max-width: 767px) {
+    @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
         flex-basis: 100%;
     }
 `;
 
 export const Button = styled.button`
-    color: hsl(180, 100%, 25%);
+    color: ${({ theme }) => theme.color.teal};
     background-color: transparent;
     border: none;
     padding: 10px;
@@ -18,14 +18,14 @@ export const Button = styled.button`
     transition: 0.3s linear;
 
     &:hover {
-    color: hsl(180, 100%, 30%);
+        filter: brightness(110%);
     }
 
     &:active {
-    color: hsl(180, 100%, 35%);
+        filter: brightness(120%);
     }
 
     &:disabled {
-    color: #ccc;
+        color: ${({ theme }) => theme.color.silver};
     }
 `;
