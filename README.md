@@ -24,6 +24,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 8. Immutability
 9. React
 10. Node.js
+11. Styled Components
+12. Custom Hooks
 
 ## Available Scripts
 
