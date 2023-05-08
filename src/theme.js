@@ -8,6 +8,6 @@ export const theme = {
         silver: "#C0C0C0"
     },
     breakpoint: {
-        mobileMax: 767,
+        mobile: 767
     }    
 };

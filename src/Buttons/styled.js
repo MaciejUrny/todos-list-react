@@ -4,7 +4,7 @@ export const Container = styled.div`
     display: flex;
     flex-wrap: wrap;
 
-    @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
+    @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
         flex-basis: 100%;
     }
 `;

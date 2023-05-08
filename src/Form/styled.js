@@ -9,7 +9,7 @@ export const FormComponent = styled.form`
     background-color: ${({ theme }) => theme.color.white};
     border-bottom: 2px solid ${({ theme }) => theme.color.alto};
 
-    @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
+    @media (max-width: ${({ theme }) => theme.breakpoint.mobile}px) {
         grid-template-columns: 1fr;
     }
 `;
