@@ -1,6 +1,6 @@
 import React from "react";
-
 import { useState } from "react";
+import { Button, FormComponent, Input } from "./styled"
 import "./style.css";
 
 const Form = ({ addNewTask }) => {
@@ -16,20 +16,18 @@ const Form = ({ addNewTask }) => {
     };
 
     return (
-        <form className="form" onSubmit={onFormSubmit}>
-            <input
+        <FormComponent onSubmit={onFormSubmit}>
+            <Input
                 value={newTaskContent}
                 onChange={({ target }) => setNewTaskContent(target.value)}
-                className="form__newTask"
                 placeholder="Co jest do zrobienia?"
                 required
                 autoFocus
             />
-            <button
-                className="form__button">
+            <Button>
                 Dodaj zadanie
-            </button>
-        </form>
+            </Button>
+        </FormComponent>
     );
 };
 
