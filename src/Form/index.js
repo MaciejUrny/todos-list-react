@@ -1,4 +1,3 @@
-import React from "react";
 import { useState } from "react";
 import { Button, FormComponent, Input } from "./styled"
 import { useRef } from "react";
