@@ -35,27 +35,19 @@ export const Button = styled.button`
     cursor: pointer;
     transition: 0.3s linear;
 
-    ${({ toggleDone }) => toggleDone && css`
-        background-color: ${({ theme }) => theme.color.camarone};
+    &:hover {
+        filter: brightness(110%); 
+    }
 
-        &:hover {
-            filter: brightness(110%); 
-        }
+    &:active {
+        filter: brightness(120%);
+    }
+`;
 
-        &:active {
-            filter: brightness(120%);
-        }
-    `}
+export const ToggleDoneButton = styled(Button)`
+    background-color: ${({ theme }) => theme.color.camarone};
+`;
 
-    ${({ remove }) => remove && css`
-        background-color: ${({ theme }) => theme.color.crimson};
-
-        &:hover {
-            filter: brightness(110%); 
-        }
-
-        &:active {
-            filter: brightness(120%);
-        }
-    `}
+export const RemoveButton = styled(Button)`
+    background-color: ${({ theme }) => theme.color.crimson};
 `;
